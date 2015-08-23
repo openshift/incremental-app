@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
 touch /tmp/artifact
-
-tar cf - /tmp/artifact
+cd /tmp
+tar cf - artifact
 

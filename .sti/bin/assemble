@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 function rake_assets_precompile() {
   [ -n "$DISABLE_ASSET_COMPILATION" ] && return
@@ -18,7 +18,6 @@ export RACK_ENV=${RACK_ENV:-"production"}
 
 if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
   echo "---> Restoring artifacts..."
-  ls /tmp/artifacts
   mv /tmp/artifacts/* ./
 fi
 

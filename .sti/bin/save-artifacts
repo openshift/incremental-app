@@ -1,8 +1,7 @@
 #!/bin/sh -e
 
-echo starting
+
 touch /tmp/artifact
 cd /tmp
 tar cf - artifact
 
-echo done
